@@ -3,9 +3,9 @@ import styles from './ContactItem.module.css';
 
 function ContactItem({ id, name, number, onDelete }) {
   return (
-    <li className={styles.buttonDelete}>
+    <li>
       {name}: {number}
-      <button onClick={() => onDelete(id)}>Delete</button>
+      <button onClick={() => onDelete(id)} className={styles.buttonDelete}>Delete</button>
     </li>
   );
 }
